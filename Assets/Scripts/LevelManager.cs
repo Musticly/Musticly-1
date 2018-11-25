@@ -41,11 +41,13 @@ public class LevelManager : MonoBehaviour {
         {
             score++;
             textScore.text = score + "/4";
+
             if (score>=4)
             {
                 menu.SetActive(false);
                 winScreen.SetActive(true);
             }
+
             greyscale -= 0.25f;
             background.color = new Color(1,1,1,1-greyscale);
         }
